@@ -10,5 +10,10 @@
 //   }
 // }
 
+// simplified
+// function even_or_odd(number) {
+//   return number % 2 ? "Odd" : "Even";
+// }
+
 // one liner w/ arrow function
 const even_or_odd = (n) => (n % 2 ? "Odd" : "Even");

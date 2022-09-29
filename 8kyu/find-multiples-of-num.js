@@ -4,13 +4,19 @@
 
 // If you can, try writing it in only one line of code.
 
-function findMultiples(integer, limit) {
-  //your code here
-  let multiples = [];
-  for (let i = integer; i <= limit; i = i + integer) {
-    multiples.push(i);
-  }
-  return multiples;
-}
+// first tryyyy
+// function findMultiples(integer, limit) {
+//   //your code here
+//   let multiples = [];
+//   for (let i = integer; i <= limit; i = i + integer) {
+//     multiples.push(i);
+//   }
+//   return multiples;
+// }
+
+
+// with arrow function and underscore
+const findMultiples = (integer, limit) =>
+Array.from({ length: limit / integer }, (_, i) => (i + 1) * integer);
 
 console.log(findMultiples(2, 8));

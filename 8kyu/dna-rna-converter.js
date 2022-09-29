@@ -9,9 +9,14 @@
 // "GCAT"  =>  "GCAU"
 // The input string can be of arbitrary length - in particular, it may be empty. All input is guaranteed to be valid, i.e. each input string will only ever consist of 'G', 'C', 'A' and/or 'T'.
 
-function DNAtoRNA(dna) {
-  return dna.replace(/T/g, "U");
-  // create a function which returns an RNA sequence from the given DNA sequence
-}
+// // first tryyy
+// function DNAtoRNA(dna) {
+//   return dna.replace(/T/g, "U");
+//   // create a function which returns an RNA sequence from the given DNA sequence
+// }
+
+
+// with arrow function
+const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
 
 console.log(DNAtoRNA("GCAT"));

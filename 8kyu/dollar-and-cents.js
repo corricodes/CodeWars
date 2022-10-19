@@ -22,6 +22,6 @@ console.log(formatMoney(69.99));
 
 
 // similar solution
-// function formatMoney(amount) {
-//   return `$${amount.toFixed(2)}`;
-// }
+function formatMoney(amount) {
+  return `$${amount.toFixed(2)}`;
+}

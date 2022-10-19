@@ -17,20 +17,20 @@
 // Note
 // In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same.
 
-//return the total number of smiling faces in the array
-// function countSmileys(arr) {
-// if ( arr.length === 0 ) {
-//   return 0;
-// }
-//   let incr = 0;
-//   let validSmileys = [":)", ";)", ":D", ":~D", ":-)", ":~)", ";~D", ";~)", ";-D", ";-)"]
-//   for (let face of arr) {
-//     if (validSmileys.includes(face)) {
-//       incr++;
-//     }
-//   }
-//   return incr;
-// }
+// first tryyyy
+function countSmileys(arr) {
+if ( arr.length === 0 ) {
+  return 0;
+}
+  let incr = 0;
+  let validSmileys = [":)", ";)", ":D", ":~D", ":-)", ":~)", ";~D", ";~)", ";-D", ";-)"]
+  for (let face of arr) {
+    if (validSmileys.includes(face)) {
+      incr++;
+    }
+  }
+  return incr;
+}
 
 // simplified
 function countSmileys(arr) {

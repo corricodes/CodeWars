@@ -8,14 +8,14 @@
 // Names given are always valid strings.
 
 // first tryyyy
-// function areYouPlayingBanjo(name) {
-//   if (name.toLowerCase().charAt(0) == "r") {
-//     return name + " plays banjo";
-//   } else {
-//     return name + " does not play banjo";
-//   }
-//   return name;
-// }
+function areYouPlayingBanjo(name) {
+  if (name.toLowerCase().charAt(0) == "r") {
+    return name + " plays banjo";
+  } else {
+    return name + " does not play banjo";
+  }
+  return name;
+}
 
 // using startWith method
 const areYouPlayingBanjo = (name) => {

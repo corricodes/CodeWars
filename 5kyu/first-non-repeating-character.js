@@ -6,33 +6,35 @@
 
 // If a string contains all repeating characters, it should return an empty string ("") or None -- see sample tests.
 
-// function firstNonRepeatingLetter(s) {
-//   return (
-//     s[
-//       s
-//         .toLowerCase()
-//         .split("")
-//         .findIndex(
-//           letter =>
-//             s
-//               .toLowerCase()
-//               .split("")
-//               .filter(l => l === letter).length === 1
-//         )
-//     ] || ""
-//   );;
-// }
 
-// closer to my orginal try, but kept failing
-// function firstNonRepeatingLetter(s) {
-//   let str = s.toLowerCase();
-//   for(let i = 0; i < str.length; i++) {
-//     if(str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
-//       return s[i];
-//     }
-//   }
-//   return "";
-// }
+// first tryyyy
+function firstNonRepeatingLetter(s) {
+  return (
+    s[
+      s
+        .toLowerCase()
+        .split("")
+        .findIndex(
+          letter =>
+            s
+              .toLowerCase()
+              .split("")
+              .filter(l => l === letter).length === 1
+        )
+    ] || ""
+  );;
+}
+
+// closer to my orginal try
+function firstNonRepeatingLetter(s) {
+  let str = s.toLowerCase();
+  for(let i = 0; i < str.length; i++) {
+    if(str.indexOf(str[i]) === str.lastIndexOf(str[i])) {
+      return s[i];
+    }
+  }
+  return "";
+}
 
 // shorter solution i found
 function firstNonRepeatingLetter(s){

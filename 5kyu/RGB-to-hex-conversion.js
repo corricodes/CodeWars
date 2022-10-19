@@ -9,76 +9,78 @@
 // rgb(0,0,0) // returns 000000
 // rgb(148, 0, 211) // returns 9400D3
 
-// function rgb(r, g, b){
-//   return convertToRGB(r)+convertToRGB(g)+convertToRGB(b)
-// }
 
-// const convertToRGB = (rgbVal) =>{
+// first tryyyy
+function rgb(r, g, b){
+  return convertToRGB(r)+convertToRGB(g)+convertToRGB(b)
+}
 
-//   if(rgbVal <= 0) return '00'
-//   if(rgbVal >= 255) return 'FF'
+const convertToRGB = (rgbVal) =>{
 
-//   firstHex=parseInt(rgbVal/16)
-//   secondHex=((rgbVal/16)-firstHex) * 16
+  if(rgbVal <= 0) return '00'
+  if(rgbVal >= 255) return 'FF'
 
-//   return getHexValue(firstHex)+getHexValue(secondHex)
+  firstHex=parseInt(rgbVal/16)
+  secondHex=((rgbVal/16)-firstHex) * 16
 
-// }
+  return getHexValue(firstHex)+getHexValue(secondHex)
 
-// const getHexValue = (digit) =>{
-//   const rgbToHex = {
-//     '0': '0',
-//     '1': '1',
-//     '2': '2',
-//     '3': '3',
-//     '4': '4',
-//     '5': '5',
-//     '6': '6',
-//     '7': '7',
-//     '8': '8',
-//     '9': '9',
-//     '10': 'A',
-//     '11': 'B',
-//     '12': 'C',
-//     '13': 'D',
-//     '14': 'E',
-//     '15': 'F',
-//   }
+}
 
-//   return rgbToHex[digit.toString()]
+const getHexValue = (digit) =>{
+  const rgbToHex = {
+    '0': '0',
+    '1': '1',
+    '2': '2',
+    '3': '3',
+    '4': '4',
+    '5': '5',
+    '6': '6',
+    '7': '7',
+    '8': '8',
+    '9': '9',
+    '10': 'A',
+    '11': 'B',
+    '12': 'C',
+    '13': 'D',
+    '14': 'E',
+    '15': 'F',
+  }
 
-// }
+  return rgbToHex[digit.toString()]
+
+}
 
 // simplified
-// function rgb(r, g, b) {
-//   //RGB Code validation/ conversion
-//   const rgbToHex = function(arg) {
-//     let x = arg;
-//     //validate rgb values
-//     if (x < 0) {
-//       x = 0;
-//     }else if(x > 255) {
-//       x = 255;
-//     }
-//     //turn each rgb value into a hex value
-//     let hex = Number(x).toString(16);
-//     //ensure there are 2 digits in each hex value
-//     if (hex.length < 2) {
-//       hex = "0" + hex;
-//     }
-//     //return hexcode
-//     console.log(hex);
-//     return hex;
-//   };
+function rgb(r, g, b) {
+  //RGB Code validation/ conversion
+  const rgbToHex = function(arg) {
+    let x = arg;
+    //validate rgb values
+    if (x < 0) {
+      x = 0;
+    }else if(x > 255) {
+      x = 255;
+    }
+    //turn each rgb value into a hex value
+    let hex = Number(x).toString(16);
+    //ensure there are 2 digits in each hex value
+    if (hex.length < 2) {
+      hex = "0" + hex;
+    }
+    //return hexcode
+    console.log(hex);
+    return hex;
+  };
 
-//   let red = rgbToHex(r);
-//   let green = rgbToHex(g);
-//   let blue = rgbToHex(b);
+  let red = rgbToHex(r);
+  let green = rgbToHex(g);
+  let blue = rgbToHex(b);
 
-//   let hexColor = red + green + blue;
-//   console.log(hexColor.toUpperCase())
-//   return hexColor.toUpperCase();
-// };
+  let hexColor = red + green + blue;
+  console.log(hexColor.toUpperCase())
+  return hexColor.toUpperCase();
+};
 
 // new solution
 function rgb(r, g, b) {

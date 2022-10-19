@@ -5,14 +5,14 @@
 // If you can, try writing it in only one line of code.
 
 // first tryyyy
-// function findMultiples(integer, limit) {
-//   //your code here
-//   let multiples = [];
-//   for (let i = integer; i <= limit; i = i + integer) {
-//     multiples.push(i);
-//   }
-//   return multiples;
-// }
+function findMultiples(integer, limit) {
+  //your code here
+  let multiples = [];
+  for (let i = integer; i <= limit; i = i + integer) {
+    multiples.push(i);
+  }
+  return multiples;
+}
 
 
 // with arrow function and underscore

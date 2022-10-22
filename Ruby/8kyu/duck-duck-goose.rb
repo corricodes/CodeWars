@@ -15,3 +15,8 @@
 def duck_duck_goose(players, goose)
   players[(goose % players.size) - 1].name
 end
+
+# another solution
+def duck_duck_goose(players, goose)
+  players.cycle.take(goose).last.name
+end

@@ -11,3 +11,7 @@
 function sumEvenNumbers(input) {
   return input.filter((n) => n % 2 === 0).reduce((a, b) => a + b, 0);
 }
+
+// similar solution
+sumEvenNumbers = (input) =>
+  input.filter((x) => x % 2 == 0).reduce((x, y) => x + y, 0);

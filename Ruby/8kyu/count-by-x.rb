@@ -15,6 +15,4 @@ end
 # another solution
 def count_by(x, n)
   x.step(by: x).take(n)
-end
-
-// testing 
+end 
